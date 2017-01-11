@@ -18,4 +18,17 @@ http://localhost:3000/api/v1/places?key=KEY&q=QUERY&type=TYPE
 
 * KEY: Google Maps API Key
 * QUERY: Search term
-* TYPE: Type of results to return. Should always be `(cities`
+* TYPE: Type of results to return. Should always be `(cities)`
+
+Returns:
+
+Returns an array of city names, including state code. E.g.
+
+```
+[
+  'Greensboro, NC',
+  'Greenville, NC'
+]
+```
+
+etc.
