@@ -22,12 +22,17 @@ http://localhost:3000/api/v1/places?key=KEY&q=QUERY&type=TYPE
 
 Returns:
 
-Returns an array of city names, including state code. E.g.
+Returns an array of city objects, including coordinates. E.g.
 
 ```
 [
-  'Greensboro, NC',
-  'Greenville, NC'
+  {
+    "name": "Boone, NC",
+    "coords": {
+      "lat": 36.216795,
+      "lng": -81.6745517
+    }
+  }
 ]
 ```
 
